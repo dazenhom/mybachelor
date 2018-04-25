@@ -1,0 +1,34 @@
+\section{隐马尔科夫模型}
+隐马尔科夫模型（Hidden Markov Model， HMM)是一种在许多领域被广泛使用的统计学时序模型，尤其是在语音识别和合成领域。
+
+\subsection{定义}
+隐马尔科夫模型是一个产生离散时间观察序列的有穷状态机。在每一个时间单元，隐马尔科夫模型通过状态转移概率改变状态，通过输出概率产生当前状态的观测数据。一个N-状态的HMM的参数我们记为 $$ \lambda = (A,B,\pi) $$
+\begin{itemize}
+	\item 状态转移概率
+	\item 输出概率
+	\item 观测序列
+	\item 状态序列
+	\item 状态时长
+\end{itemize}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=.8\textwidth]{figures/test.jpg}
+	\caption{这个是状态说明示例图}
+\end{figure}
+\subsection{最优状态序列}
+大概是写先验概率 $$ P(O|\lambda)=\sum_{q}{P(O,q|\lambda)} = \max_{q}{P(O,q|\lambda)}$$
+的计算，前向后向算法，viterbi解码
+这个看<<统计参数学习>>比较清楚
+\subsection{参数估计}
+
+\section{基于隐马尔科夫模型的语音合成}
+\subsection{参数生成算法}
+\subsection{多空间概率分布}	% 可能不需要	
+\subsection{决策树上下文聚类} % 可能不需要
+\section{说话人自适应}
+\subsection{MLLR 适应}
+\subsection{Tying Transformation Matrices}
+\section{Speaker Adaptive Trainng}
+\subsection{Average Voice Model Training}
+\section{说话人混搭}
